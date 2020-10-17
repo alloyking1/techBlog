@@ -13,7 +13,7 @@ const router = new Router({
     {
       path:"/blog",
       name:"blog_page",
-      component:() => import("./components/Blogg.vue")
+      component:() => import("./components/blog/Blog.vue")
     }
   ],
 });
