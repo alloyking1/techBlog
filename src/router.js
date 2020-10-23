@@ -19,6 +19,11 @@ const router = new Router({
       path:"/blog_single",
       name:"blog_single",
       component:() => import("./components/blog/BlogSingle.vue")
+    },
+    {
+      path:"/podcast",
+      name:"podcast",
+      component:() => import("./components/podcast/Podcast.vue")
     }
   ],
 });
