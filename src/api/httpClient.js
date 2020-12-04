@@ -14,19 +14,19 @@ const httpsClient = axios.create({
 });
 
 // Adding token to request using interceptors
-httpsClient.interceptors.request.use(
-  config => {
+// httpsClient.interceptors.request.use(
+//   config => {
     
-    let token = localStorage.getItem("key");
-    if (token) {
-      config.headers["Authorization"] = `Bearer ${token}`;
-    }
-    return config;
-  },
-  function (error) {
-    return Promise.reject(error);
-  }
-);
+//     let token = localStorage.getItem("key");
+//     if (token) {
+//       config.headers["Authorization"] = `Bearer ${token}`;
+//     }
+//     return config;
+//   },
+//   function (error) {
+//     return Promise.reject(error);
+//   }
+// );
 
 // httpsClient.interceptors.response.use((response) => {
 //   return response;

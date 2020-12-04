@@ -5,9 +5,13 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/styles/style.css";
 
+import blogStore from "./blogStore";
+
 Vue.config.productionTip = false;
+window.Vuex = require("vuex");
 
 new Vue({
   render: (h) => h(App),
   router,
+  blogStore
 }).$mount("#app");

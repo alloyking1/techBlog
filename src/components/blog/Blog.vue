@@ -1,21 +1,23 @@
 <template>
-    <div>
-        <Nav/>
-        <Content/>
-        <Footer/>
-    </div>
-    
+  <div>
+    <Nav />
+    <!-- <Content /> -->
+    <Categories />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import Content from './Content.vue';
-import Nav from './Nav.vue';
-import Footer from './Footer.vue';
+// import Content from "./Content.vue";
+import Categories from "./Categories.vue";
+import Nav from "./Nav.vue";
+import Footer from "./Footer.vue";
 export default {
-    components:{    
-        Footer,
-        Nav,
-        Content
-    }
-}
+  components: {
+    Footer,
+    Nav,
+    // Content,
+    Categories,
+  },
+};
 </script>
