@@ -5,7 +5,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./assets/styles/style.css";
 
-import blogStore from "./blogStore";
+import blogStore from "./store";
 
 Vue.config.productionTip = false;
 window.Vuex = require("vuex");

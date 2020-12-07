@@ -10,6 +10,16 @@ const router = new Router({
       name:"home",
       component: () => import('./components/Home.vue'),
     },
+    // {
+    //   path:"/category",
+    //   name:"category",
+    //   component:() => import("./components/blog/Blog.vue")
+    // },
+    {
+      path:"/category/post",
+      name:"category_post",
+      component:() => import("./components/blog/CategoriesPost.vue")
+    },
     {
       path:"/blog",
       name:"blog_page",
