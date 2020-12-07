@@ -16,7 +16,8 @@ const router = new Router({
     //   component:() => import("./components/blog/Blog.vue")
     // },
     {
-      path:"/category/post",
+      path:"/category/post/:id",
+      props: true,
       name:"category_post",
       component:() => import("./components/blog/CategoriesPost.vue")
     },
@@ -26,8 +27,9 @@ const router = new Router({
       component:() => import("./components/blog/Blog.vue")
     },
     {
-      path:"/blog_single",
+      path:"/blog_single/:id",
       name:"blog_single",
+      props: true,
       component:() => import("./components/blog/BlogSingle.vue")
     },
     {

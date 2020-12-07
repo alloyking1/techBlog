@@ -2,9 +2,11 @@
   <div class="container pt-5 pb-5">
     <div class="container-custom">
       <div class="row">
-        <div class="col-md-6 p-3" v-for="(category, i) in categories" key="i">
+        <div class="col-md-6 p-3" v-for="(category, i) in categories">
           <div class="card p-2">
-            <router-link to="/category/post" class="nav-link dropdown-toggle">
+            <router-link
+              :to="{ name: 'category_post', params: { id: category.id } }"
+            >
               <h1>{{ category.name }}</h1>
               <hr />
               <p>{{ category.description }}</p>
@@ -12,31 +14,6 @@
           </div>
           <br />
         </div>
-
-        <!-- <div class="col-md-6 p-3">
-          <div class="card">
-            <h1>heading</h1>
-            <hr />
-            <p>this is the body of the card</p>
-          </div>
-          <br />
-        </div>
-        <div class="col-md-6 p-3">
-          <div class="card">
-            <h1>heading</h1>
-            <hr />
-            <p>this is the body of the card</p>
-          </div>
-          <br />
-        </div>
-        <div class="col-md-6 p-3">
-          <div class="card">
-            <h1>heading</h1>
-            <hr />
-            <p>this is the body of the card</p>
-          </div>
-          <br />
-        </div> -->
       </div>
     </div>
   </div>
@@ -55,8 +32,13 @@ export default {
   created() {
     axios.get("https://tekiii.com/wp-json/wp/v2/categories").then((res) => {
       this.categories = res.data;
-      console.log(res.data);
     });
+
+    axios
+      .get("https://tekiii.com/wp-json/wp/v2/posts?categories=6")
+      .then((res) => {
+        console.log(res);
+      });
   },
 };
 </script>
