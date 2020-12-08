@@ -33,12 +33,6 @@ export default {
     axios.get("https://tekiii.com/wp-json/wp/v2/categories").then((res) => {
       this.categories = res.data;
     });
-
-    axios
-      .get("https://tekiii.com/wp-json/wp/v2/posts?categories=6")
-      .then((res) => {
-        console.log(res);
-      });
   },
 };
 </script>

@@ -23,115 +23,7 @@
 
             <!-- Post content-->
             <div v-html="post.content.rendered"></div>
-            <p class="py-3">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum.
-            </p>
-            <h2 class="h3 pt-2 pb-4">Some real life examples</h2>
-            <div class="cs-carousel cs-gallery">
-              <div
-                class="cs-carousel-inner"
-                data-carousel-options='{"items": 2, "controls": false, "responsive": {"0":{"items":1, "gutter": 20},"500":{"items":2, "gutter": 20}, "700":{"items":2, "gutter": 30}}}'
-              >
-                <div>
-                  <a
-                    class="cs-gallery-item rounded-lg"
-                    href="img/blog/single/01.jpg"
-                    data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Gallery image caption #1&lt;/h6&gt;'
-                    ><img
-                      src="img/blog/single/th01.jpg"
-                      alt="Gallery thumbnail"
-                    /><span class="cs-gallery-caption"
-                      >Gallery image caption #1</span
-                    ></a
-                  >
-                </div>
-                <div>
-                  <a
-                    class="cs-gallery-item rounded-lg"
-                    href="img/blog/single/02.jpg"
-                    data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Gallery image caption #2&lt;/h6&gt;'
-                    ><img
-                      src="img/blog/single/th02.jpg"
-                      alt="Gallery thumbnail"
-                    /><span class="cs-gallery-caption"
-                      >Gallery image caption #2</span
-                    ></a
-                  >
-                </div>
-                <div>
-                  <a
-                    class="cs-gallery-item rounded-lg"
-                    href="img/blog/single/03.jpg"
-                    data-sub-html='&lt;h6 class="font-size-sm text-light"&gt;Gallery image caption #3&lt;/h6&gt;'
-                    ><img
-                      src="img/blog/single/th03.jpg"
-                      alt="Gallery thumbnail"
-                    /><span class="cs-gallery-caption"
-                      >Gallery image caption #3</span
-                    ></a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="py-4">
-              <p class="pt-3">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                ut aut reiciendis voluptatibus maiores alias consequatur aut
-                perferendis doloribus asperiores repellat.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <h2 class="h3 pt-1 pb-4">Expert opinion</h2>
-            <div class="bg-faded-primary rounded-lg p-4 mb-4">
-              <div class="p-md-3">
-                <blockquote class="blockquote mb-0">
-                  <p class="text-nav">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida dignissimos
-                    ducimus qui blanditiis praesentium voluptatum.
-                  </p>
-                  <p class="text-nav">
-                    Mattis enim ut tellus elementum sagittis vitae et leo duis.
-                  </p>
-                  <footer class="blockquote-footer">Miguel Sánchez</footer>
-                </blockquote>
-              </div>
-            </div>
-            <p class="py-3">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum.
-            </p>
+
             <!-- Tags + Sharing-->
             <div
               class="row no-gutters position-relative align-items-center border-top border-bottom my-5"
@@ -168,6 +60,9 @@
                 </div>
               </div>
             </div>
+            <hr />
+            <!-- comment -->
+            <Comment :content_id="id" :absolute_url="post.link" />
           </div>
 
           <!-- Sidebar-->
@@ -183,6 +78,7 @@
 import Sidebar from "./SideBar.vue";
 import Nav from "./Nav.vue";
 import Footer from "./Footer.vue";
+import Comment from "./Comment.vue";
 import axios from "axios";
 export default {
   props: ["id"],
@@ -190,6 +86,7 @@ export default {
     Sidebar,
     Nav,
     Footer,
+    Comment,
   },
   data() {
     return {
@@ -197,23 +94,16 @@ export default {
     };
   },
   mounted() {
-    // try {
-    //   axios
-    //     .get(`https://tekiii.com/wp-json/wp/v2/posts?categories=${this.id}`)
-    //     .then((res) => {
-    //       this.post = res.data;
-    //     });
-    // } catch {
-    //   console.log("there was an error");
-    // }
-
-    axios
-      //   .get(`https://tekiii.com/wp-json/wp/v2/posts?categories=${this.id}`)
-      .get(`https://tekiii.com/wp-json/wp/v2/posts/${this.id}`)
-      .then((res) => {
-        this.post = res.data;
-        console.log(this.post);
-      });
+    try {
+      axios
+        .get(`https://tekiii.com/wp-json/wp/v2/posts/${this.id}`)
+        .then((res) => {
+          this.post = res.data;
+          console.log(this.post);
+        });
+    } catch {
+      console.log("there was an error");
+    }
   },
 };
 </script>

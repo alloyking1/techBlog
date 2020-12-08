@@ -3,7 +3,6 @@
     <Nav />
     <Content :posts="post" />
     <Footer />
-    <!-- <p>{{ post }}</p> -->
   </div>
 </template>
 <script>
