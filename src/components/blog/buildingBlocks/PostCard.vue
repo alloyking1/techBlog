@@ -28,9 +28,18 @@
           </div></a
         > -->
         <div class="mt-3 text-right text-nowrap">
-          <a class="meta-link font-size-xs" href="#"
-            ><i class="fe-message-square mr-1"></i>&nbsp;6</a
-          ><span class="meta-divider"></span
+          <a class="meta-link font-size-xs" href="#">
+            <!-- <i class="fe-message-square mr-1"></i> -->
+            <img
+              class="rounded-circle"
+              width="36"
+              src="https://tekiii.com/wp-content/uploads/2020/11/7x7p-1024x576.jpg"
+              alt="Emma Brown"
+            />
+            Name</a
+          >
+
+          <span class="meta-divider"></span
           ><a class="meta-link font-size-xs" href="#"
             ><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;{{
               content.date | formatDate
@@ -50,14 +59,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.card-custom {
-  box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.1),
-    0 4px 6px 2px rgba(241, 165, 165, 0.05);
-
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 0.5px;
-}
-</style>

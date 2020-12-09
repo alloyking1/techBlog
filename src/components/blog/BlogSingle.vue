@@ -2,9 +2,11 @@
   <div>
     <Nav />
     <!-- Page content-->
-    <div class="cs-sidebar-enabled cs-sidebar-right">
+    <div
+      class="cs-header navbar navbar-expand-lg navbar-light bg-light navbar-box-shadow navbar-sticky"
+    >
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- Content-->
           <div class="col-lg-9 cs-content py-4 mb-2 mb-sm-0 pb-sm-5">
             <div class="pb-4" style="max-width: 38rem">
@@ -66,7 +68,7 @@
           </div>
 
           <!-- Sidebar-->
-          <Sidebar />
+          <!-- <Sidebar /> -->
         </div>
       </div>
     </div>

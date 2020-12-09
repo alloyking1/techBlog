@@ -15,6 +15,7 @@
     <div class="row">
       <div class="col-md-6 pt-3" v-for="(category, i) in categories">
         <router-link
+          class="noRouterLink"
           :to="{ name: 'category_post', params: { id: category.id } }"
         >
           <article
@@ -57,13 +58,3 @@ export default {
 };
 </script>
 
-<style>
-.card-custom {
-  box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.1),
-    0 4px 6px 2px rgba(241, 165, 165, 0.05);
-
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 0.5px;
-}
-</style>
