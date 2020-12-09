@@ -11,9 +11,10 @@
       ></div> -->
       <div class="card-body">
         <span class="badge badge-dark">{{ content.slug }}</span>
-        <h2 class="h4 nav-heading mt-2 mb-4" v-html="content.title.rendered">
-          <!-- {{ content.title.rendered }} -->
-        </h2>
+        <h2
+          class="h4 nav-heading mt-2 mb-4"
+          v-html="content.title.rendered"
+        ></h2>
         <p class="font-size-md" v-html="content.excerpt.rendered"></p>
         <!-- <a class="media meta-link font-size-sm align-items-center pt-3" href="#"
           ><img
@@ -31,7 +32,9 @@
             ><i class="fe-message-square mr-1"></i>&nbsp;6</a
           ><span class="meta-divider"></span
           ><a class="meta-link font-size-xs" href="#"
-            ><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 19</a
+            ><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;{{
+              content.date | formatDate
+            }}</a
           >
         </div>
       </div>
