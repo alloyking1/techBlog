@@ -72,7 +72,7 @@
                   >Podcast</router-link
                 >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown" @click="openForm()">
                 <router-link to="#" class="nav-link dropdown-toggle"
                   >Radio</router-link
                 >

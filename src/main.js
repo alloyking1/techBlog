@@ -15,6 +15,14 @@ Vue.filter('formatDate', function(value) {
   }
 });
 
+Vue.mixin({
+  methods: {
+    openForm() {
+      document.getElementById("myForm2").style.display = "block";
+    },
+  },
+})
+
 Vue.config.productionTip = false;
 window.Vuex = require("vuex");
 

@@ -27,7 +27,7 @@
                 <div>
                   <button
                     class="btn btn-outline-primary mr-2"
-                    @click="openForm"
+                    @click="openForm()"
                   >
                     Radio
                   </button>
