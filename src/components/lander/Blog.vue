@@ -5,14 +5,14 @@
         <div class="row justify-content-center mb-4 pb-2">
           <div class="col-xl-6 col-lg-7 col-md-8">
             <h2 class="h1 mb-4 text-center">
-              <!-- Tekiii {{ process.env.VUE_APP_BASE_URL || "tekiii" }} -->
+              {{ this.$SiteName }}
               <span class="bg-faded-primary rounded text-primary px-3 py-2"
-                >Gaming Blog</span
+                >Blog</span
               >
             </h2>
             <p class="text-muted text-center">
-              Big collection of thoroughly designed inner page templates from
-              User Account/Dashboard to Specialty pages like 404 and Coming Soon
+              We have a technology blog with a unique interest in gaming related
+              topics.
             </p>
           </div>
         </div>

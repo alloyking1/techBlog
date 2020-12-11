@@ -20,8 +20,10 @@
                 <p
                   class="h4 font-weight-light text-light opacity-70 line-height-base"
                 >
-                  And you will find everything you need to build a great looking
-                  website.
+                  Chat and share with over a thousand Game lovers and Game
+                  developers worldwide. We have live discussions. We're building
+                  the biggest Gaming virtual user group in the world. Come join
+                  the fun.
                 </p>
                 <a
                   class="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5"

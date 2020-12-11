@@ -6,7 +6,7 @@
           <div class="col-md-6 mb-5 mb-md-0">
             <div class="mx-auto mx-md-0" style="max-width: 525px">
               <img
-                class="d-block"
+                class="rounded-circle"
                 src="../../assets/img/podcast.png"
                 alt="Mobile screens"
               />
@@ -15,16 +15,14 @@
           <div class="col-md-6 text-center text-md-left">
             <h2 class="h1 mb-4">
               <span class="bg-faded-primary rounded text-primary px-3 py-2"
-                >Mobile Friendly</span
+                >Internet Radio</span
               >
-              Interface
+              Podcast
             </h2>
             <p class="text-muted mb-5">
-              Around based on advanced fully responsive Bootstrap grid. It looks
-              great at any screen resolution and optimized for small touch
-              screens. Around features 2 types of navigation for handeld devices
-              and off-canvas sidebars that are easily accessible. All sliders
-              used in the template have swipe support.
+              {{ this.$SiteName }} Internet radio brings you super cool music.
+              Our Podcast features all round technology with a unique interest
+              in the gaming and gadget nitches. — hear what matters most to you!
             </p>
             <div
               class="d-flex align-items-center justify-content-center justify-content-md-start"

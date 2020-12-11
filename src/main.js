@@ -19,11 +19,12 @@ Vue.mixin({
   methods: {
     openForm() {
       document.getElementById("myForm2").style.display = "block";
-    },
+    }
   },
 })
 
 Vue.config.productionTip = false;
+Vue.prototype.$SiteName = process.env.VUE_APP_SITE_NAME
 window.Vuex = require("vuex");
 
 new Vue({
