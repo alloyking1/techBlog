@@ -35,6 +35,9 @@
                   <router-link to="/" class="btn btn-outline-primary"
                     >Home</router-link
                   >
+                  <router-link to="/" class="btn btn-outline-primary"
+                    >Blog</router-link
+                  >
                 </div>
               </div>
             </div>
