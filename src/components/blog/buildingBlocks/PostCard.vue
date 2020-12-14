@@ -2,20 +2,19 @@
   <div>
     <!-- Post-->
     <article class="card card-horizontal card-custom card-hover mb-grid-gutter">
-      <!-- <div
-        class="card-img-top"
+      <div
+        class="card-img-top m-3"
         href="blog-single-ns.html"
-        style="
-          background-image: url(https://tekiii.com/wp-content/uploads/2020/11/7x7p-1024x576.jpg);
-        "
-      ></div> -->
+        :style="{
+          backgroundImage: `url(${content.thumbnail_images.full.url})`,
+        }"
+      ></div>
       <div class="card-body">
+        <!-- <span class="badge badge-dark">{{ content.slug }}</span> -->
         <span class="badge badge-dark">{{ content.slug }}</span>
-        <h2
-          class="h4 nav-heading mt-2 mb-4"
-          v-html="content.title.rendered"
-        ></h2>
-        <p class="font-size-md" v-html="content.excerpt.rendered"></p>
+        <h2 class="h4 nav-heading mt-2 mb-4" v-html="content.title"></h2>
+        <!-- <p class="font-size-md" v-html="content.excerpt.rendered"></p> -->
+        <p class="font-size-md" v-html="content.excerpt"></p>
         <!-- <a class="media meta-link font-size-sm align-items-center pt-3" href="#"
           ><img
             class="rounded-circle"
@@ -29,14 +28,13 @@
         > -->
         <div class="mt-3 text-right text-nowrap">
           <a class="meta-link font-size-xs" href="#">
-            <!-- <i class="fe-message-square mr-1"></i> -->
             <img
               class="rounded-circle"
               width="36"
               src="https://tekiii.com/wp-content/uploads/2020/11/7x7p-1024x576.jpg"
               alt="Emma Brown"
             />
-            Name</a
+            {{ content.author.first_name }}</a
           >
 
           <span class="meta-divider"></span
