@@ -11,21 +11,16 @@
       ></div>
       <div class="card-body">
         <!-- <span class="badge badge-dark">{{ content.slug }}</span> -->
-        <span class="badge badge-dark">{{ content.slug }}</span>
+        <div
+          class="meta-link"
+          v-for="(tag, index) in content.tags"
+          :key="index"
+        >
+          <span class="badge badge-dark mr-2">{{ tag.title }}</span>
+        </div>
         <h2 class="h4 nav-heading mt-2 mb-4" v-html="content.title"></h2>
-        <!-- <p class="font-size-md" v-html="content.excerpt.rendered"></p> -->
         <p class="font-size-md" v-html="content.excerpt"></p>
-        <!-- <a class="media meta-link font-size-sm align-items-center pt-3" href="#"
-          ><img
-            class="rounded-circle"
-            width="36"
-            src="img/blog/avatar/01.jpg"
-            alt="Emma Brown"
-          />
-          <div class="media-body pl-2 ml-1 mt-n1">
-            by<span class="font-weight-semibold ml-1">Emma Brown</span>
-          </div></a
-        > -->
+
         <div class="mt-3 text-right text-nowrap">
           <a class="meta-link font-size-xs" href="#">
             <img

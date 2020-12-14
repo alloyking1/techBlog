@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="container">
     <div v-for="(eachPost, index) in recentPost.posts" :key="index">
-      <!-- <router-link
+      <router-link
         class="noRouterLink"
         :to="{ name: 'blog_single', params: { id: eachPost.id } }"
-      > -->
-      <!-- Post-->
-      <PostCard :content="eachPost" />
-      <!-- </router-link> -->
+      >
+        <!-- Post-->
+        <PostCard :content="eachPost" />
+      </router-link>
     </div>
   </div>
 </template>

@@ -13,7 +13,7 @@
           </ol>
         </nav>
         <h1 class="mb-5">Blog</h1>
-        <div v-for="(eachPost, index) in posts" :key="index">
+        <div v-for="(eachPost, index) in posts.posts" :key="index">
           <router-link
             class="noRouterLink"
             :to="{ name: 'blog_single', params: { id: eachPost.id } }"

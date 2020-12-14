@@ -19,9 +19,13 @@ export default {
     };
   },
   mounted() {
+    const pages = 1;
     try {
       axios
-        .get(`https://tekiii.com/wp-json/wp/v2/posts?categories=${this.id}`)
+        .get(
+          // `${process.env.VUE_APP_BASE_URL}/wp-json/wp/v2/posts?categories=${this.id}`
+          `${process.env.VUE_APP_BASE_URL}/api/get_category_posts/?category_id=${this.id}&count=6&page=${pages}`
+        )
         .then((res) => {
           this.post = res.data;
         });

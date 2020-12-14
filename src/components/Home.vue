@@ -83,7 +83,15 @@
         </div>
       </section>
       <!-- Blog-->
-      <BlogLander />
+      <section class="container">
+        <BlogLander />
+        <router-link
+          to="/blog"
+          class="btn btn-outline-primary ml-4"
+          style="margin-top: -10rem"
+          >More Posts</router-link
+        >
+      </section>
       <!-- Podcast and radio-->
       <PodcastLander />
     </div>

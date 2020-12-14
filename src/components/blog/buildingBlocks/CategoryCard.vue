@@ -39,9 +39,11 @@ export default {
     };
   },
   created() {
-    axios.get("https://tekiii.com/wp-json/wp/v2/categories").then((res) => {
-      this.categories = res.data;
-    });
+    axios
+      .get(`${process.env.VUE_APP_BASE_URL}/wp-json/wp/v2/categories`)
+      .then((res) => {
+        this.categories = res.data;
+      });
   },
 };
 </script>
