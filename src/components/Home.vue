@@ -25,45 +25,16 @@
                   the biggest Gaming virtual user group in the world. Come join
                   the fun.
                 </p>
-                <a
-                  class="d-inline-flex align-items-center text-decoration-none pt-2 mt-4 mb-5"
-                  href="#demos"
-                  data-scroll
-                  ><span class="btn btn-icon rounded-circle border-light"
-                    ><i class="fe-arrow-down h4 text-light my-1"></i></span
-                  ><span class="ml-3 text-light font-weight-medium"
-                    >View Demos</span
-                  ></a
-                >
-                <hr class="hr-light mb-5" />
-                <div class="row">
-                  <div class="col-sm-4 mb-4 mb-sm-0">
-                    <div class="h1 text-light mb-1">12</div>
-                    <div
-                      class="h5 text-light font-weight-normal opacity-70 mb-2"
-                    >
-                      Demo Homepages
-                    </div>
-                    <span class="badge badge-pill badge-success"
-                      >More coming</span
-                    >
-                  </div>
-                  <div class="col-sm-4 mb-4 mb-sm-0">
-                    <div class="h1 text-light mb-1">50+</div>
-                    <div
-                      class="h5 text-light font-weight-normal opacity-70 mb-1"
-                    >
-                      Flexible Components
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="h1 text-light mb-1">47</div>
-                    <div
-                      class="h5 text-light font-weight-normal opacity-70 mb-1"
-                    >
-                      Inner Page Templates
-                    </div>
-                  </div>
+
+                <div class="input-group-append">
+                  <a
+                    class="btn btn-primary"
+                    href="#"
+                    data-toggle="modal"
+                    data-view="#modal-signup-view"
+                    ><i class="fe-hash mr-2"></i
+                    ><i class="fab fa-slack">Join our community</i></a
+                  >
                 </div>
               </div>
             </div>
