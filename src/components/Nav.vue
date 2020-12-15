@@ -27,22 +27,6 @@
               alt="TalkBox"
             />
           </router-link>
-          <div class="d-flex align-items-center order-lg-3 ml-lg-auto">
-            <a
-              class="nav-link-style font-size-sm text-nowrap"
-              href="#modal-signin"
-              data-toggle="modal"
-              data-view="#modal-signin-view"
-              ><i class="fe-user font-size-xl mr-2"></i>Sign in
-            </a>
-            <a
-              class="btn btn-primary ml-grid-gutter d-none d-lg-inline-block"
-              href="#modal-signin"
-              data-toggle="modal"
-              data-view="#modal-signup-view"
-              >Join our community</a
-            >
-          </div>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -55,6 +39,9 @@
               </li>
               <li class="nav-item" @click="openForm()">
                 <router-link to="#" class="nav-link">Radio</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/about" class="nav-link">About</router-link>
               </li>
             </ul>
           </div>

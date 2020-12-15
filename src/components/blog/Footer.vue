@@ -152,3 +152,12 @@
     </footer>
   </div>
 </template>
+
+<script>
+// import EmailList from "../EmailList";
+export default {
+  components: {
+    // EmailList,
+  },
+};
+</script>

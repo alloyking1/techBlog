@@ -33,3 +33,5 @@ new Vue({
   router,
   blogStore
 }).$mount("#app");
+
+
