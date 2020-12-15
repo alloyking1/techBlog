@@ -69,12 +69,12 @@
                             </div>
                             <div class="cs-parallax-layer" data-depth="0.4"><img src="../assets/img/demo/presentation/intro/layer08.png" alt="Layer"/>
                             </div> -->
-                <div class="cs-parallax-layer" data-depth="0.35">
+                <!-- <div class="cs-parallax-layer" data-depth="0.35">
                   <img
                     src="../assets/img/demo/presentation/intro/layer09.png"
                     alt="Layer"
                   />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

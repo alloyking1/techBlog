@@ -29,7 +29,8 @@
 <script>
 import RecentPostCard from "../blog/RecentPost.vue";
 import CategoryCard from "./buildingBlocks/CategoryCard";
-import Nav from "./Nav.vue";
+// import Nav from "./Nav.vue";
+import Nav from "../Nav.vue";
 import Footer from "./Footer.vue";
 export default {
   components: {

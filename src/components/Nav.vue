@@ -5,9 +5,15 @@
       data-scroll-header
     >
       <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-        <router-link to="/" class="navbar-brand">{{
-          this.$SiteName
-        }}</router-link>
+        <router-link to="/" class="navbar-brand">
+          <!-- <img
+            class="d-none d-lg-block"
+            width="53"
+            src="../assets/img/logoTekiii.png"
+            :alt="this.$SiteName"
+          /> -->
+          Tekiii
+        </router-link>
         <button
           class="navbar-toggler"
           type="button"

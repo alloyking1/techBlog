@@ -20,7 +20,8 @@
           <span class="text-light opacity-50 mr-1"
             >© {{ this.$SiteName }} {{ new Date().getFullYear() }}</span
           >
-          | Privacy Policy
+          |
+          <router-link to="/contact">Contact us</router-link>
         </p>
       </div>
       <br />

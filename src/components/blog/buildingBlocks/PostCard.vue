@@ -23,12 +23,7 @@
 
         <div class="mt-3 text-right text-nowrap">
           <a class="meta-link font-size-xs" href="#">
-            <img
-              class="rounded-circle"
-              width="36"
-              src="https://tekiii.com/wp-content/uploads/2020/11/7x7p-1024x576.jpg"
-              alt="Emma Brown"
-            />
+            <img class="rounded-circle" width="36" src="#" alt="" />
             {{ content.author.first_name }}</a
           >
 
