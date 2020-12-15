@@ -30,7 +30,7 @@
                   <a
                     class="btn btn-primary"
                     target="_blank"
-                    href="https://join.slack.com/t/tekiii/shared_invite/zt-k6iqvqz5-52IB4~Evwl7~0ydzuzDZbA"
+                    :href="this.$SlackLink"
                     ><i class="fab fa-slack">Join our community</i></a
                   >
                 </div>

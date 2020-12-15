@@ -7,7 +7,7 @@
           <h2 class="text-light mb-5">Join our Slack Gaming Community.</h2>
           <a
             class="btn btn-primary"
-            href="https://join.slack.com/t/tekiii/shared_invite/zt-k6iqvqz5-52IB4~Evwl7~0ydzuzDZbA"
+            :href="this.$SlackLink"
             target="_blank"
             rel="noopener"
             ><i class="fe-hash mr-2"></i><i class="fab fa-slack"></i>Add Me</a

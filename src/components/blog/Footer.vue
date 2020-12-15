@@ -7,25 +7,49 @@
           <div class="col-md-7 mb-3">
             <div class="d-sm-flex justify-content-between">
               <div class="cs-widget cs-widget-light pb-1 mb-4">
-                <h4 class="cs-widget-title">Popular categories</h4>
+                <h4 class="cs-widget-title">Have a look around</h4>
                 <ul>
                   <!-- To do -->
-                  <li><a class="cs-widget-link" href="#">Brand strategy</a></li>
                   <li>
-                    <a class="cs-widget-link" href="#">Project management</a>
+                    <a
+                      class="cs-widget-link"
+                      target="_blank"
+                      :href="this.$SlackLink"
+                      >Join Our Community</a
+                    >
                   </li>
-                  <li><a class="cs-widget-link" href="#">Business</a></li>
-                  <li><a class="cs-widget-link" href="#">Technology</a></li>
                   <li>
-                    <a class="cs-widget-link" href="#">Travel &amp; Vacation</a>
+                    <router-link to="/podcast" class="cs-widget-link"
+                      >{{ this.$SiteName }} Podcast</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link to="/radio" class="cs-widget-link"
+                      >{{ this.$SiteName }} Internet Radio</router-link
+                    >
                   </li>
                 </ul>
               </div>
+
               <div class="cs-widget cs-widget-light pb-1 mb-4">
                 <h4 class="cs-widget-title">Social media</h4>
                 <ul>
-                  <li><a class="cs-widget-link" href="#">Facebook</a></li>
-                  <li><a class="cs-widget-link" href="#">Twitter</a></li>
+                  <li>
+                    <a
+                      class="cs-widget-link"
+                      target="_blank"
+                      href="https://web.facebook.com/officialtekiii"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="cs-widget-link"
+                      target="_blank"
+                      href="https://twitter.com/Tekiii9"
+                      >Twitter</a
+                    >
+                  </li>
                   <!-- <li><a class="cs-widget-link" href="#">Tumblr</a></li>
                   <li><a class="cs-widget-link" href="#">Medium</a></li>
                   <li><a class="cs-widget-link" href="#">YouTube</a></li> -->
@@ -34,8 +58,12 @@
               <div class="cs-widget cs-widget-light pb-1 mb-4">
                 <h4 class="cs-widget-title">Resources</h4>
                 <ul>
-                  <li><a class="cs-widget-link" href="#">Contacts</a></li>
-                  <li><a class="cs-widget-link" href="#">Careers</a></li>
+                  <li>
+                    <router-link to="/contact" class="cs-widget-link"
+                      >Contacts</router-link
+                    >
+                  </li>
+                  <li><a class="cs-widget-link" href="#">About</a></li>
                   <li><a class="cs-widget-link" href="#">Privacy Policy</a></li>
                   <li>
                     <a class="cs-widget-link" href="#">Terms and Condition</a>
@@ -85,14 +113,7 @@
                 <div
                   style="position: absolute; left: -5000px"
                   aria-hidden="true"
-                >
-                  <input
-                    class="cs-subscribe-form-antispam"
-                    type="text"
-                    name="b_c7103e2c981361a6639545bd5_29ca296126"
-                    tabindex="-1"
-                  />
-                </div>
+                ></div>
                 <div class="cs-subscribe-status"></div>
               </form>
             </div>

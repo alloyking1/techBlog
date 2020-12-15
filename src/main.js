@@ -25,6 +25,7 @@ Vue.mixin({
 
 Vue.config.productionTip = false;
 Vue.prototype.$SiteName = process.env.VUE_APP_SITE_NAME
+Vue.prototype.$SlackLink = process.env.VUE_APP_SLACK_LINK
 window.Vuex = require("vuex");
 
 new Vue({

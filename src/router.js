@@ -36,7 +36,12 @@ const router = new Router({
       path:"/podcast",
       name:"podcast",
       component:() => import("./components/podcast/Podcast.vue")
-    }
+    },
+    {
+      path:"/contact",
+      name:"contact",
+      component:() => import("./components/Contact.vue")
+    },
   ],
 });
 
