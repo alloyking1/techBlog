@@ -42,6 +42,21 @@ const router = new Router({
       name:"contact",
       component:() => import("./components/Contact.vue")
     },
+    {
+      path:"/about",
+      name:"contact",
+      component:() => import("./components/About.vue")
+    },
+    {
+      path:"/terms",
+      name:"contact",
+      component:() => import("./components/Terms&Conditions.vue")
+    },
+    {
+      path:"/privacy",
+      name:"contact",
+      component:() => import("./components/Privacy.vue")
+    },
   ],
 });
 

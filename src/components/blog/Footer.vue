@@ -63,10 +63,20 @@
                       >Contacts</router-link
                     >
                   </li>
-                  <li><a class="cs-widget-link" href="#">About</a></li>
-                  <li><a class="cs-widget-link" href="#">Privacy Policy</a></li>
                   <li>
-                    <a class="cs-widget-link" href="#">Terms and Condition</a>
+                    <router-link to="/about" class="cs-widget-link"
+                      >About</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link to="/privacy" class="cs-widget-link"
+                      >Privacy Policy</router-link
+                    >
+                  </li>
+                  <li>
+                    <router-link to="/terms" class="cs-widget-link"
+                      >Terms and Condition</router-link
+                    >
                   </li>
                 </ul>
               </div>
