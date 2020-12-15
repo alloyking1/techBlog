@@ -29,10 +29,8 @@
                 <div class="input-group-append">
                   <a
                     class="btn btn-primary"
-                    href="#"
-                    data-toggle="modal"
-                    data-view="#modal-signup-view"
-                    ><i class="fe-hash mr-2"></i
+                    target="_blank"
+                    href="https://join.slack.com/t/tekiii/shared_invite/zt-k6iqvqz5-52IB4~Evwl7~0ydzuzDZbA"
                     ><i class="fab fa-slack">Join our community</i></a
                   >
                 </div>

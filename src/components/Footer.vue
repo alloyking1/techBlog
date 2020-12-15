@@ -5,7 +5,11 @@
         <div class="pb-md-4 text-center">
           <h3 class="text-light font-weight-light mb-3">Are you a gamer?</h3>
           <h2 class="text-light mb-5">Join our Slack Gaming Community.</h2>
-          <a class="btn btn-primary" href="#" target="_blank" rel="noopener"
+          <a
+            class="btn btn-primary"
+            href="https://join.slack.com/t/tekiii/shared_invite/zt-k6iqvqz5-52IB4~Evwl7~0ydzuzDZbA"
+            target="_blank"
+            rel="noopener"
             ><i class="fe-hash mr-2"></i><i class="fab fa-slack"></i>Add Me</a
           >
         </div>
@@ -45,12 +49,12 @@
               </div>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px" aria-hidden="true">
-                <input
+                <!-- <input
                   class="cs-subscribe-form-antispam"
                   type="text"
                   name="b_c7103e2c981361a6639545bd5_29ca296126"
                   tabindex="-1"
-                />
+                /> -->
               </div>
               <small class="form-text text-light opacity-50 pt-2"
                 >*Subscribe to our newsletter to receive early gaming events,
