@@ -46,22 +46,20 @@
         <hr />
         <section class="section section-lg bg-gradient-default p-5">
           <div class="container pt-lg pb-300 p-5">
-            <!-- <div class="row text-center justify-content-center"> -->
-            <div class="col-lg-10">
-              <h2 class="">Sections</h2>
-            </div>
-            <div class="container">
-              <div class="pt-2 mx-auto mb-5 mb-lg-0 ml-lg-0 mr-xl-7">
+            <div class="row text-center justify-content-center">
+              <div class="col-lg-10">
+                <h2 class="">Sections</h2>
+              </div>
+              <div class="row">
                 <iframe
                   src="https://anchor.fm/anumadu-moses/embed/episodes/talkbox-ed6hcm"
-                  height="300rem"
-                  width="200rem"
+                  height="100rem"
+                  width="100rem"
                   frameborder="0"
                   scrolling="no"
                 ></iframe>
               </div>
             </div>
-            <!-- </div> -->
           </div>
           <!-- SVG separator -->
         </section>
@@ -72,7 +70,7 @@
 </template>
 
 <script>
-import HomeFooter from "../Footer";
+import HomeFooter from "../blog/Footer";
 import HomeNav from "../Nav";
 export default {
   components: {

@@ -139,7 +139,7 @@
               class="d-block mr-grid-gutter mb-3"
               href="index.html"
               style="width: 108px"
-              ><img src="img/logo/logo-footer.png" alt="Around"
+              ><img src="img/logo/logo-footer.png" :alt="this.$SiteName"
             /></a>
             <p class="font-size-sm pt-2 mb-3">
               <span class="text-light opacity-50 mr-1"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <HomeNav />
     <!-- Page content-->
     <div
       class="cs-header navbar navbar-expand-lg navbar-light bg-light navbar-box-shadow navbar-sticky"
@@ -20,11 +20,14 @@
                   </li>
                 </ol>
               </nav>
-              <h1 v-html="post.title.rendered"></h1>
+              <h1 v-html="post.post.title"></h1>
             </div>
 
             <!-- Post content-->
-            <div v-html="post.content.rendered"></div>
+            <div v-html="post.post.content"></div>
+            <div>
+              {{ post.post.title }}
+            </div>
 
             <!-- Tags + Sharing-->
             <div
@@ -56,14 +59,14 @@
 </template>
 
 <script>
-import Nav from "./Nav.vue";
+import HomeNav from "../Nav";
 import Footer from "./Footer.vue";
 import Comment from "./Comment.vue";
 import axios from "axios";
 export default {
   props: ["id"],
   components: {
-    Nav,
+    HomeNav,
     Footer,
     Comment,
   },
@@ -73,16 +76,13 @@ export default {
     };
   },
   mounted() {
-    try {
-      axios
-        .get(`https://tekiii.com/wp-json/wp/v2/posts/${this.id}`)
-        .then((res) => {
-          this.post = res.data;
-          console.log(this.post);
-        });
-    } catch {
-      console.log("there was an error");
-    }
+    axios
+      // .get(`https://tekiii.com/wp-json/wp/v2/posts/${this.id}`)
+      .get(`${process.env.VUE_APP_BASE_URL}/api/get_post/?id=${this.id}`)
+      .then((res) => {
+        this.post = res.data;
+        console.log(this.post);
+      });
   },
 };
 </script>

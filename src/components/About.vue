@@ -32,24 +32,26 @@
             ></div>
             <div class="row no-gutters mx-n2 pt-lg-4">
               <div class="col-sm-4 px-2 mb-3">
-                <a
+                <router-link
+                  to="/blog"
                   class="card h-100 card-body py-5 justify-content-center border-0 box-shadow-lg text-center"
-                  href="#"
-                  ><i class="fe-blog text-primary h1 mb-3"></i>
-                  <h3 class="h5 mb-0">Blog</h3></a
-                >
+                  ><i class="fe-book text-primary h1 mb-3"></i>
+                  <h3 class="h5 mb-0">Blog</h3>
+                </router-link>
               </div>
               <div class="col-sm-4 px-2 mb-3">
                 <a
                   class="card card-body py-5 border-0 box-shadow-lg text-center mb-3"
                   href="#"
-                  ><i class="fe-pie-chart text-danger h1 mb-3"></i>
-                  <h3 class="h5 mb-0">Analize</h3></a
+                  @click="openForm()"
+                  ><i class="fe-music text-danger h1 mb-3"></i>
+                  <h3 class="h5 mb-0">Radio</h3></a
                 ><a
                   class="card card-body py-5 border-0 box-shadow-lg text-center"
-                  href="#"
-                  ><i class="fe-refresh-ccw text-info h1 mb-3"></i>
-                  <h3 class="h5 mb-0">Automate</h3></a
+                  :href="this.$SlackLink"
+                  target="_blank"
+                  ><i class="fe-slack text-info h1 mb-3"></i>
+                  <h3 class="h5 mb-0">Slack</h3></a
                 >
               </div>
             </div>

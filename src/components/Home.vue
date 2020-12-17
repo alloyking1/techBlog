@@ -31,8 +31,8 @@
                     class="btn btn-primary"
                     target="_blank"
                     :href="this.$SlackLink"
-                    ><i class="fab fa-slack">Join our community</i></a
-                  >
+                    ><i class="fe-slack"></i>Join our community
+                  </a>
                 </div>
               </div>
             </div>
