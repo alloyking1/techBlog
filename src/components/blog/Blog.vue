@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Nav />
+    <HomeNav />
     <div class="container pt-5 pb-5" style="margin-top: 4rem; padding: 4rem">
       <nav aria-label="breadcrumb">
         <h1 class="mb-5">Recent Post</h1>
@@ -30,12 +30,12 @@
 import RecentPostCard from "../blog/RecentPost.vue";
 import CategoryCard from "./buildingBlocks/CategoryCard";
 // import Nav from "./Nav.vue";
-import Nav from "../Nav.vue";
+import HomeNav from "../Nav.vue";
 import Footer from "./Footer.vue";
 export default {
   components: {
     Footer,
-    Nav,
+    HomeNav,
     CategoryCard,
     RecentPostCard,
   },
